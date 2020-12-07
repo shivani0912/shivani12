@@ -1,0 +1,435 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+
+}
+#nav{
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    justify-content: space-between;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(252, 244, 244);
+}
+#nav #left h5{
+    color: black;
+    font-size: 16px;
+    font-family: cursive;
+}
+#nav #right a{
+    color:black;
+    text-decoration: none;
+    font-size: 11px;
+    font-family: sans-serif;
+    margin: 15px;
+}
+#nav #right i{
+    color: black;
+    font-size: 10px;
+    margin: 20px;
+}
+#panel{
+    display: flex;
+    height: 70%;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+  
+}
+#panel1{
+    height: 100%;
+    width: 50%;
+    background-image: url(https://travel-made-simple.com/wp-content/uploads/2019/01/Can-you-bring-makeup-on-a-plane.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#panel2{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    background-color: rgb(253, 250, 250);
+}
+#content{
+    position: relative;
+
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 30%;
+    width: 65%;
+ 
+}
+#content p{
+    font-family: cursive;
+    font-size: 10px;
+    margin-bottom: 4px;
+    margin-left: 2px;
+}
+#content h1{
+    font-family:sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    word-spacing: 2px;
+    margin-bottom: 15px;
+}
+#content p{
+    color: rgb(99, 97, 97);
+}
+#content button{
+    padding: 6px 25px;
+    margin-top: 25px;
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    word-spacing: 2px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+#newpanel{
+    margin-top: 30px;
+    display: flex;
+    padding-left: 150px;
+    padding-right: 150px;
+    justify-content: space-around;
+    width: 100%;
+    height: 32%; 
+}
+#newpanel1{
+    width: 30%;
+    height: 100%;
+    background-image: url(https://www.dermascope.com/media/k2/items/cache/8c8620bb2df195c117f585f50d7f9c43_XL.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#content1{
+    width: 50%;
+    height: 50%;
+    position: relative;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+}
+ #content1 p{
+     font-size: 10px;
+     margin-left: 2px;
+     color: #fff;
+     font-weight: 800;
+ }
+ #content1 h1{
+     font-size: 25px;
+     font-family: serif;
+     margin-top: 4px;
+     color: #fff;
+     font-weight: 800;
+     margin-bottom: 5px;
+ }
+ #content1 button{
+    background-color: black;
+    color: white;
+    padding: 2px 10px;
+    font-size: 8px;
+    border-radius: 15px;
+    border: 1px solid black;
+ }
+#newpanel2{
+    width: 30%;
+    height: 100%;
+  background-image: url(data:image/jpeg;base64,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);
+  background-size: cover;
+  background-position: left;
+}
+#content2{
+    width: 50%;
+    height: 50%;
+    position: relative;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+}
+ #content2 p{
+     font-size: 10px;
+     margin-left: 2px;
+     color: #fff;
+ }
+ #content2 h1{
+     font-size: 25px;
+     color: #fff;
+     font-family: serif;
+     margin-top: 4px;
+     margin-bottom: 5px;
+ }
+ #content2 button{
+    background-color: black;
+    color: #fff;
+    padding: 2px 10px;
+    font-size: 8px;
+    border-radius: 15px;
+    border: 1px solid black;
+ }
+#newpanel3{
+    width: 30%;
+    height: 100%;
+   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDNEhp04PFDyUSCZU7krJI-CFM8DxZMbaf5Q&usqp=CAU);
+   background-size: cover;
+  background-position:top;
+}
+#content3{
+    width: 50%;
+    height: 50%;
+    position: relative;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+}
+ #content3 p{
+     font-size: 10px;
+     margin-left: 2px;
+     color: #fff;
+ }
+ #content3 h1{
+     font-size: 25px;
+     font-family: serif;
+     color: #fff;
+     margin-top: 4px;
+     margin-bottom: 5px;
+ }
+ #content3 button{
+    background-color: black;
+    color:#fff;
+    padding: 2px 10px;
+    font-size: 8px;
+    border-radius: 15px;
+    border: 1px solid black;
+ }
+ #heading{
+
+    width: 100%;
+    margin-top: 30px;
+    height: 30px;
+    padding-left: 600px;
+    padding-right: 600px;
+  
+ }
+#heading h4{
+    color: black;
+    font-family: serif;
+    word-spacing: 2px;
+    font-size: 18px;
+    font-weight:800;
+}
+.line{
+    height: 1px;
+    width: 148px;
+    background-color: black;
+}
+#bg{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+    height: 40%;
+    width: 100%;
+    padding-right: 166px;
+    padding-left: 166px;
+}
+#newbg{
+    margin-top: 40px;
+    display: flex;
+    height: 70%;
+    width: 100%;
+    padding-left: 172px;
+    padding-right: 172px;
+}
+#newbg1{
+    height: 100%;
+    width: 50%;
+    background-color: rebeccapurple;
+    margin-right: 30px;
+    background-image: url(https://i.pinimg.com/originals/27/9c/83/279c83c44c995c3ff6c82aaef3f192bd.jpg);
+    background-size: cover;
+    background-position: top;
+}
+#overlay1{
+    height: 100%;
+    width: 100%;
+background-color: rgba(0, 0, 0, 0.521);
+} 
+ 
+#text{
+    position: relative;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    height: 30%;
+    width: 30%;
+}  
+#text h6{
+    color: rgb(247, 244, 244);
+    font-size: 20px;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+#text p{
+    color: orange;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+#text H5{
+    color: rgb(247, 244, 244);
+    font-size: 22px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+#newbg2{
+    height: 100%;
+    width: 50%;
+   
+}
+#part1{
+    height: 46.6%;
+    width: 100%;
+    background-image: url(https://cdn.pixabay.com/photo/2015/01/01/22/15/woman-586185_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 30px;
+}
+#overlay2{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.521);
+} 
+#text1{
+    position: relative;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    height: 30%;
+    width: 30%;
+}  
+#text1 h6{
+    color: rgb(247, 244, 244);
+    font-size: 20px;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+#text1 p{
+    color: orange;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+#text1 H5{
+    color: rgb(247, 244, 244);
+    font-size: 22px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+#part2{
+    height: 46.6%;
+    width: 100%;
+    background-image: url(https://thumbs.dreamstime.com/b/beautiful-young-woman-spa-model-perfect-candid-girl-healthy-skin-facial-treatment-face-lifting-skincare-concept-beautiful-143513170.jpg);
+    background-size: cover;
+    background-position: top;
+}
+#overlay3{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.521);
+}  
+#text2{
+    position: relative;
+    top: 40%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    height: 30%;
+    width: 30%;
+}  
+#text2 h6{
+    color: rgb(247, 244, 244);
+    font-size: 20px;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+#text2 p{
+    color: orange;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+#text2 H5{
+    color: rgb(247, 244, 244);
+    font-size: 22px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+#text2 H4{
+    color: rgb(247, 244, 244);
+    font-size: 22px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+#npanel{
+    position: relative;
+    display: flex;
+    margin-top: 50px;
+    height: 50%;
+    width: 100%;
+    padding-right: 172px;
+    padding-left: 172px;
+}
+#ccontent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 90%;
+    width: 70%;
+    padding-left: 330px;
+    padding-right: 330px;
+   
+}
+#ccontent h1{
+    font-size: 24px;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+}
+#ccontent p{
+    font-size: 8px;
+    font-family: sans-serif;
+    color: grey;
+    margin-bottom: 10px;
+}
+#inputdiv{
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+#inputdiv input{
+    width: 60%;
+    height: 30px;
+    padding: 6px 15px;
+}
+#inputdiv button{
+    width: 25px;
+    height: 30px;
+    border-color: black;
+background-color: black;
+}
+#inputdiv button i{
+    color: #fff;
+}
+#ccontent i{
+    margin-left: 5px;
+}
+
